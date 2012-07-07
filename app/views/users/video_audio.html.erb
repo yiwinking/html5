@@ -1,4 +1,42 @@
+<h3>Video support 3 formats : Ogg , MPEG4 , WebM.</h3>
 <p>
-<video src="test.mp4" height="550" width="550" preload="none" autoplay="autoplay" controls = "controls"></video>
+ps : make () into <>
+</p>
 <p>
-<audio width="320" height="240"  src="20120706morningcall.mp3" controls = "controls" loop = "loop"></audio>
+1.(video src="test.mp4" height="550" width="550" preload="none" autoplay="autoplay" controls = "controls")Your browser doesn't support HTML5, so you can't watch this videa(/video)
+</p>
+
+2."autoplay" make video play by itself; "preload" ,prepare loading ,and it will be ignored if "autoplay" exist ; "loop", means , loop ; "height" and "width" are used for setting size; "src" to get the video address ; "controls" let user to set play , pause and stop the video.
+
+
+<p>
+3.content between (video), for those browser cannot support HTML5, so we can set "doesn't support HTML5" or sth like that.
+</p>
+
+<p>
+4.different formats for auto choosing : 
+<p>
+(video width="320" height="240" controls="controls")
+<p>
+(source src="movie.ogg" type="video/ogg")
+<p>
+(source src="movie.mp4" type="video/mp4")
+<p>
+Your browser does not support the video tag.
+<p>
+(/video)
+<p>
+browser will choose one it can recognize。
+
+</p>
+<p>
+<video src="test.mp4" height="550" width="550" preload="none" autoplay="autoplay" controls = "controls" loop = "loop">Your browser doesn't support HTML5, so you can't watch this videa</video>
+</p>
+
+
+
+<h3>Audio support 3 formats : Ogg Vorbis , MP3, Wav</h3>   
+
+audio doesn't have width and height, others is same as video
+<p>
+<audio src="20120706morningcall.mp3" controls = "controls" loop = "loop"></audio>
